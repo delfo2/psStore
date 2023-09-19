@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    padding: 1rem;
+}
+
+.header__h1 > img {
+    width: 20vw;
+    margin-right: 15vw;
+}
+
+.header__nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav > ul {
+    list-style: none;
+}
+.header__nav > ul > li > a {
+    background-color: none;
+    color: black;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.header__nav > ul > li > a:hover {
+    text-decoration: underline;
+}

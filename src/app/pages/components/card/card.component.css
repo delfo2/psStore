@@ -1,0 +1,75 @@
+.card {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    width: 20vw;
+}
+
+.card:hover .card__text {
+    opacity: 1;
+}
+.card:hover .card__img {
+    transform: scale(1.1);
+}
+
+.card__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease-in-out 300ms;
+    width: 100%;
+}
+
+.card__tag {
+    background-color: rgb(0, 0, 0);
+    right: 0%;
+    position: absolute;
+    bottom: 20%;
+}
+
+.card__text {
+    background-color: rgb(0, 0, 0);
+    bottom: 0%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+    padding: .5rem;
+    position: absolute;
+    transition: all 300ms;
+    width: 100%;
+}
+
+.card__text > span {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card__text > span > ul::before {
+    content: '❚';
+    color: var(--ps-blue-light);
+    filter: brightness(2);
+    padding-right: 5px;
+}
+
+.card__text > span > ul {
+    display: flex;
+}
+
+.card__text > span > ul > li {
+
+}
+
+.card__text > span > ul > li::after {
+    content: '|';
+    padding: 0 5px;
+}
+
+.card__text > span > ul > :last-child::after {
+    content: '';
+}
+
+.card__text > span > span{
+    font-weight: 900;
+}

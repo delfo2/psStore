@@ -1,0 +1,13 @@
+<div class="card">
+    <img src="{{ cardImg }}" class="card__img" alt="game cover" />
+    <span class="card__tag" *ngIf="isExclusive">Exclusive</span>
+    <div class="card__text">
+        <h2>{{ cardName }}</h2>
+        <span>
+            <ul>
+                <li *ngFor="let platform of platforms">{{ platform.platform.name }}</li>
+            </ul>
+            <span>R${{ cardPrice }}</span>
+        </span>
+    </div>
+</div>

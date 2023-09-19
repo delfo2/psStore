@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+    --ps-blue: rgb(23, 36, 151);
+    --ps-blue-light: rgb(59, 76, 233);
+	--sans : 'Open Sans', sans-serif;
+	--rowdies-font: 'Rowdies', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--sans);
+}

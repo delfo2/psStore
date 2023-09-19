@@ -1,0 +1,11 @@
+<app-header></app-header>
+<main>
+    <app-card
+        *ngFor="let game of games"
+        [cardImg]="game.background_image"
+        [cardName]="game.name"
+        [platforms]="game.platforms"
+        [cardPrice]="game.metacritic"
+    ></app-card>
+</main>
+<app-footer></app-footer>
