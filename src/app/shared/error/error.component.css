@@ -1,0 +1,20 @@
+section {
+    align-items: center;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+    width: 400px;
+}
+span {
+    height: 30%;
+    width: 30%;
+}
+img {
+    filter: invert();
+    width: 100%;
+}

@@ -1,4 +1,48 @@
 main {
     background-color: var(--ps-blue);
-    height: 100vh;
+    padding: 5rem;
+}
+.games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.games__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+.games > * {
+    margin-bottom: 2rem;
+}
+
+.games__api-info {
+    color: rgb(255, 255, 255);
+    grid-column: 1 / 5;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.games__api-info > a {
+    color: white;
+}
+.games__api-info > a:hover {
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        padding: 5rem 1rem;
+    }
+    .games__title {
+        font-size: 1.5rem;
+    }
+
+    .games > * {
+        grid-column: 1 / 5;
+        margin-bottom: 2rem;
+    }
 }

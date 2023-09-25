@@ -50,3 +50,12 @@
 .rodape__link:hover {
     filter: brightness(1.4);
 }
+
+@media screen and (max-width: 900px) {
+    .rodape {
+        padding: 2rem;
+    }
+    p {
+        text-align: center;
+    }
+}

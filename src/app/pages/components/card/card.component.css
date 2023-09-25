@@ -1,14 +1,25 @@
 .card {
+    display: block;
     height: 60vh;
     position: relative;
     overflow: hidden;
     width: 20vw;
 }
 
-.card:hover .card__text {
+.card:hover .card__text,
+.card:focus .card__text,
+.card:focus-visible .card__text,
+.card:focus-within .card__text,
+.card:target .card__text,
+.card:active .card__text {
     opacity: 1;
 }
-.card:hover .card__img {
+.card:hover .card__img,
+.card:focus .card__img,
+.card:focus-visible .card__img,
+.card:focus-within .card__img,
+.card:target .card__img,
+.card:active .card__img {
     transform: scale(1.1);
 }
 
@@ -57,10 +68,6 @@
     display: flex;
 }
 
-.card__text > span > ul > li {
-
-}
-
 .card__text > span > ul > li::after {
     content: '|';
     padding: 0 5px;
@@ -72,4 +79,10 @@
 
 .card__text > span > span{
     font-weight: 900;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
 }

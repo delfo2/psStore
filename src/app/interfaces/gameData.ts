@@ -72,7 +72,7 @@ export interface GameData {
         dropped: number;
         playing: number;
     };
-    metacritic: number;
+    metacritic: number | null;
     suggestions_count: number;
     updated: string;
     id: number;

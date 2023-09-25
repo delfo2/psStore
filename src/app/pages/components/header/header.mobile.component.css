@@ -1,0 +1,22 @@
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__h1 > img {
+        width: auto;
+        margin-right: 0;
+        height: 5vh;
+        margin-bottom: 10px;
+    }
+
+    .header__nav > ul > li > a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .header__nav > :last-child {
+        display: none;
+    }
+}

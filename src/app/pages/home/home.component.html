@@ -1,11 +1,27 @@
 <app-header></app-header>
 <main>
-    <app-card
-        *ngFor="let game of games"
-        [cardImg]="game.background_image"
-        [cardName]="game.name"
-        [platforms]="game.platforms"
-        [cardPrice]="game.metacritic"
-    ></app-card>
+    <div class="games" *ngIf="!loadScreen && !errorScreen">
+        <h2 class="games__title">Jogos populares de {{ year }}</h2>
+        <app-card
+            *ngFor="let game of games"
+            [cardImg]="game.background_image"
+            [cardName]="game.name"
+            [platforms]="game.platforms"
+            [cardPrice]="game.metacritic"
+            [cardLink]="'https://rawg.io/games/' + game.slug"
+        ></app-card>
+        <span class="games__api-info">
+            powered by
+            <a
+                href="https://rawg.io/apidocs"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                RAWG Api
+            </a>
+        </span>
+    </div>
+    <app-load *ngIf="loadScreen"></app-load>
+    <app-error *ngIf="errorScreen" [year]="year" [additionalMessage]="errorMessage"></app-error>
 </main>
 <app-footer></app-footer>

@@ -1,4 +1,4 @@
-<div class="card">
+<a [href]="cardLink" target="_blank" rel="noopener noreferrer" class="card">
     <img src="{{ cardImg }}" class="card__img" alt="game cover" />
     <span class="card__tag" *ngIf="isExclusive">Exclusive</span>
     <div class="card__text">
@@ -10,4 +10,4 @@
             <span>R${{ cardPrice }}</span>
         </span>
     </div>
-</div>
+</a>
